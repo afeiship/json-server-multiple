@@ -19,7 +19,7 @@ export default class {
     const apis = this._apiPath;
     fs.readdirSync(apis).map(api => {
       return Object.assign(
-        this._data, require(`${apis}/${api}`)
+        this._data, require(`${apis}/${api}`).default
       );
     });
   }

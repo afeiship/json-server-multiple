@@ -44,7 +44,7 @@ var _default = function () {
 
       var apis = this._apiPath;
       _fs2.default.readdirSync(apis).map(function (api) {
-        return Object.assign(_this._data, require(apis + '/' + api));
+        return Object.assign(_this._data, require(apis + '/' + api).default);
       });
     }
   }, {

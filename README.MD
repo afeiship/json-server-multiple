@@ -4,7 +4,7 @@
 
 ## install:
 ```bash
-npm install afeiship/json-server-multiple
+npm install afeiship/json-server-multiple --save
 ```
 
 

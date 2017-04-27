@@ -1,6 +1,10 @@
 import fs from 'fs';
 
 export default class {
+  static create(inDbJson,inApiPath,inSpacer){
+    return new this(inDbJson,inApiPath,inSpacer);
+  }
+
   constructor(inDbJson,inApiPath,inSpacer=2){
     this._dbJson = inDbJson;
     this._apiPath = inApiPath;

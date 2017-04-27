@@ -16,6 +16,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var _default = function () {
+  _createClass(_default, null, [{
+    key: 'create',
+    value: function create(inDbJson, inApiPath, inSpacer) {
+      return new this(inDbJson, inApiPath, inSpacer);
+    }
+  }]);
+
   function _default(inDbJson, inApiPath) {
     var inSpacer = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 2;
 

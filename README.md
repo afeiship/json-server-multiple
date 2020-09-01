@@ -51,7 +51,7 @@ server.listen(3001, () => {
 ```
 
 ## resouces
-+　https://github.com/Marak/faker.js
+- https://github.com/Marak/faker.js
 
 
 ## license

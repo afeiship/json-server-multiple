@@ -4,7 +4,7 @@
 
 ## install:
 ```bash
-npm install afeiship/json-server-multiple --save
+npm install @feizheng/json-server-multiple --save
 ```
 
 

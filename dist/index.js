@@ -28,10 +28,10 @@ var _default = function () {
 
     _classCallCheck(this, _default);
 
-    this._dbJson = inDbJson;
-    this._apiPath = inApiPath;
-    this._spacer = inSpacer;
-    this._data = {};
+    this.dbJson = inDbJson;
+    this.apiPath = inApiPath;
+    this.spacer = inSpacer;
+    this.data = {};
 
     this.read();
     this.write();
@@ -42,15 +42,15 @@ var _default = function () {
     value: function read() {
       var _this = this;
 
-      var apis = this._apiPath;
+      var apis = this.apiPath;
       _fs2.default.readdirSync(apis).map(function (api) {
-        return Object.assign(_this._data, require(apis + '/' + api).default);
+        return Object.assign(_this.data, require(apis + '/' + api).default);
       });
     }
   }, {
     key: 'write',
     value: function write() {
-      _fs2.default.writeFileSync(this._dbJson, JSON.stringify(this._data, null, this._spacer));
+      _fs2.default.writeFileSync(this.dbJson, JSON.stringify(this.data, null, this.spacer));
     }
   }]);
 
